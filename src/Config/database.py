@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from urllib.parse import quote_plus
+from sqlalchemy.ext.declarative import declarative_base
 
 load_dotenv()
 
@@ -16,3 +17,5 @@ DATABASE_URL = "mssql+pyodbc://@DESKTOP-P8GCKCP\\SQLEXPRESS/FundooAPPdb?driver=O
 engine = create_engine(DATABASE_URL)
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+Base = declarative_base()
