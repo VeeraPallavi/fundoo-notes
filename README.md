@@ -91,7 +91,7 @@ fundoo-notes
 ### 1 Clone the repository
 
 ```
-git clone https://github.com/vilas-kr/fundoo-notes.git
+git clone https://github.com/VeeraPallavi/fundoo-notes.git
 cd fundoo-notes
 ```
 
@@ -112,7 +112,7 @@ Activate it:
 ### 3 Install dependencies
 
 ```
-pip install -r requirements.txt
+pip freeze > requirements.txt
 ```
 
 ### 4 Configure environment variables
@@ -159,4 +159,3 @@ Includes:
 
 - Request logs
 - Error logs
-- Structured logging with metadata (user_id, note_id)
